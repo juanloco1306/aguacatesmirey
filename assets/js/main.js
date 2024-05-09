@@ -36,6 +36,14 @@ const shadowHeader = () =>{
 }
 window.addEventListener('scroll', shadowHeader)
 
+/*=============== SWIPER ===============*/
+const swiperFavorites = new Swiper('.favorites__swiper', {
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    centeredSlides: 'auto',
+})
+
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{
 	const scrollUp = document.getElementById('scroll-up')
@@ -110,3 +118,4 @@ sr.reveal(`.home__img`, { origin: 'bottom' })
 sr.reveal(`.enjoy__card, .popular__card`, {interval:100})
 sr.reveal(`.about__data`, { origin: 'right' })
 sr.reveal(`.about__img`, { origin: 'left' })
+
